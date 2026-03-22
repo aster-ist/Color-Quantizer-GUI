@@ -7,6 +7,8 @@ and lets you export the processed result.
 图像颜色量化工具是一个桌面应用程序，用于把图像压缩到较少的颜色数量。
 它使用 K-Means 进行颜色量化，提供对比预览，并支持导出处理结果。
 
+In simpler terms, this project can be applied to drawing (processing reference images to better depict binary representations (perhaps?)) and assisting in image processing and other needs.
+通俗一点说，该项目可以应用于绘画（处理参考图片，更好的进行二分刻画（或许？）），辅助处理图像等需求。
 ![App Preview](images/app-preview.png)
 
 ## Project Overview / 项目简介
@@ -24,27 +26,28 @@ and lets you export the processed result.
 ## Package Contents / 文件内容
 
 - `app/`
-  Windows packaged application
+  Windows packaged application/Windows 打包应用程序
 - `source/`
-  Source code and project assets
+  Source code and project assets/源代码和项目资源
 - `images/`
-  Preview image used by this README
+  Preview image used by this README/本 README 使用的预览图像
 - `LICENSE`
-  License file
+  License file/许可证文件
+
 
 ## Run Directly / 直接运行
 
-Open this file:
+Open this file:/打开此文件：
 
 ```text
 app/gui_color_quantizer/gui_color_quantizer.exe
 ```
 
-说明：
+Explanation:/说明：
 
-- `gui_color_quantizer.exe` 是程序入口
-- `_internal/` 是运行时依赖目录，必须和 exe 保持在一起
-- 不要单独移动或删除 `_internal/`
+- `gui_color_quantizer.exe` is the program entry point/是程序入口
+- `_internal/` is a runtime dependency directory and must be kept in the same directory as the .exe file/是运行时依赖目录，必须和 exe 保持在一起
+- Do not move or delete individually/不要单独移动或删除 `_internal/`
 
 ## Run From Source / 从源码运行
 
@@ -65,7 +68,7 @@ python -m color_quantizer_gui
 - `requirements.txt`
 - `pyproject.toml`
 
-示例图片位于：
+Example image located at/示例图片位于：
 
 ```text
 source/assets/examples/example.png
@@ -73,11 +76,11 @@ source/assets/examples/example.png
 
 ## Reference and Attribution / 参考与致谢
 
-This project is inspired by and adapted from the official scikit-learn example:
+This project is inspired by and adapted from the official scikit-learn example:/本项目灵感来源于官方的 scikit-learn 示例并对其进行了改编:
 
 - [Color Quantization using K-Means](https://scikit-learn.org/0.23/auto_examples/cluster/plot_color_quantization.html)
 
-The original demonstration script is preserved in:
+The original demonstration script is preserved in:/原始演示脚本保存在：
 
 ```text
 source/references/plot_color_quantization_reference.py
